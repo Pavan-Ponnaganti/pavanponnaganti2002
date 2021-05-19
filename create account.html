@@ -1,38 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> create account</title>
-        <style>
-            body{
-                text-align: center;
-                background-color: bisque;
-            }
-            h1{
-                font-family: 'Courier New', Courier, monospace;
-            }
-            p{
-                font-size: 40px;
-            }
-            input{
-                width: 20%;
-                margin:5px;
-            }
-            #a{
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>create account</h1>
-        <form action="vignan2.html">
-            
-            <input type="text" placeholder="name"><br>
-            <input type="tel" placeholder="+91"><br>
-            <input type="text" placeholder="g-mail"><br>
-            <input type="text" placeholder="ex:12th class"><br>
-            <input type="submit" value="sign in">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
 
-        </form>
+        }
+        .login-box{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            vertical-align: middle;
+            width: 30%;
+            background: linear-gradient(45deg, #7efff5, #32ff7e, #18dcff);
+            border: 5px solid #2ecc71;
+            border-radius: 30px;
+        }
+        .bg-blue{
+            background-color: #18dcff;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .bg-orange{
+            background-color: #ffaf40;
+            margin: 0px;
+            padding: 0px;
+            width: 200%;
+            height: 200vh;
+            transform: rotate(-20deg);
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            box-shadow: -1px -2px 3px 3px rgba(0,0,0,0.5);
+        }
+        input{
+            margin:10px;
+            border:3px solid #ff9900;
+            border-radius: 20px;
+            height: 40px;
+            width:65%;
+            margin-bottom: 30px;
+            padding: 5px;
+            transition: width 0.5s;
+            text-align: center;
+            font-size: 100%;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            outline: none;
+        }
+        input:hover{
+            width: 80%;
+        }
+        p{
+            padding: 1px;
+            font-family: Papyrus;
+            font-weight: 900px;
+            font-size: 40px;
+            color: #f8e95f;
+            text-shadow: 2px 2px 1px rgba(105, 105, 105, 0.664);
+        }
+        #button{
+            margin-bottom: 20px;
+            color:cornflowerblue;
+            background-color: #2e86de;
+            border-radius: 10px;
+            border:1px solid #246aaf;
+            color:white;
+            width:30%;
+            box-shadow: 1px 1px 5px rgb(66, 66, 82);
+        }
+        #button:hover{
+            box-shadow:1px 1px 5px rgb(118, 118, 126);
+        }
+        #button:active{
+            box-shadow: none;
+        }
+        br{
+            margin:1px;
+            padding:0px;
+        }
+    </style>
+    <div class="bg-blue">
+        <div class="bg-orange">
+        </div>
+        <div class="login-box">
+            <p>Login</p>
+            <input type="text" placeholder="User Name">
+            <input type="Password" placeholder="Password"><br>
+            <input id="button" type="submit" value="Sign In">
+        </div>
+    </div>
+</body>
+</html>
         <p>
             we declare that "we wont  disturd you by sending unwanted message<br>and<br>we wont share your details with anyone"
         </p>
